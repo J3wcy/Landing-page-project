@@ -1,48 +1,185 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body {
+	background: white;
+	font-size: 16px;
+	line-height: 1.2;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+/* Global H Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+/* Basic page structure */
+.header_area,
 .header,
 .footer {
-    background-color: #1F2937;
+	background-color: #1f2937;
 }
 
-.header-logo {
-    font-size: 24px;
-    color: #f9faf8;
+.logo {
+	font-size: 24px;
 }
 
-.title {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
+.header {
 }
-
-a, 
-.website-text {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
 .img {
-    background-color: rgb(151, 151, 151);
-    color: #e5e7eb;
+	background-color: slategray;
+	color: white;
 }
 
+.random_info {
+}
+
+.quote_area {
+	background-color: #e5e7eb;
+}
+
+.action {
+}
+
+.footer {
+}
+
+/* Specific Sections start here */
+/* Header */
+.header_area {
+	background: #1f2937;
+	color: white;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	background-color: #1f2937;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem auto;
+}
+.header_nav {
+	list-style-type: none;
+	display: flex;
+	gap: 1.5rem;
+}
+.header_nav a {
+	color: #ccc;
+	text-decoration: none;
+}
+.header_nav a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/* Main Section */
+.main {
+	background: #1f2937;
+	color: #e5e7eb;
+	padding: 50px 0;
+}
+.main .container {
+	display: flex;
+	justify-content: center;
+}
+.main-text {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding-right: 3rem;
+	gap: 1rem;
+	align-items: flex-start;
+}
+.main-text p {
+	color: lightgray;
+}
+.main-image {
+	display: block;
+	width: 100%;
+}
+.main-image_area {
+	flex-grow: 1;
+}
+
+/* Random Section */
+.random_header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.random_list {
+	display: flex;
+	justify-content: center;
+	gap: 8rem;
+}
+.random_info .container {
+	padding: 50px 0;
+}
+.random_block img {
+	border-radius: 1rem;
+	border: 5px solid #3882f6;
+}
+ul .random_block {
+	text-align: center;
+	color: grey;
+}
+
+/* Quote Area */
+blockquote,
+figcaption {
+	font-style: italic;
+	font-size: 36px;
+	color: #1f2937;
+}
+figcaption {
+	text-align: end;
+}
+.quote {
+	padding: 6rem;
+}
+
+/* Action Content Area */
+.container .body {
+	background-color: #3882f6;
+	color: white;
+	margin: 5rem;
+	padding: 2rem 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 1rem;
+}
+
+/* Footer Area */
+footer {
+	padding: 20px;
+	text-align: center;
+	color: lightgray;
+	font-size: 12px;
+}

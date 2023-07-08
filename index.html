@@ -5,35 +5,66 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Landing Page Project</title>
+		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="button.css" />
 	</head>
 	<body>
-		<div class="header content">
-			<div class="navbar">
-				<h3 class="header-logo">Header Logo</h3>
-				<div class="links">
-					<a href="">Learn More</a>
-					<a href="">Learn More</a>
-					<a href="">Learn More</a>
-				</div>
+		<header class="header_area">
+			<div class="container">
+				<nav class="nav">
+					<h1 class="logo">Header Logo</h1>
+					<div class="header_nav">
+						<li>
+							<a href="">Learn More</a>
+						</li>
+						<li>
+							<a href="">Learn More</a>
+						</li>
+						<li>
+							<a href="">Learn More</a>
+						</li>
+					</div>
+				</nav>
 			</div>
-			<div class="website-content">
-				<div class="website">
-					<h1 class="title">This Website is Awesome</h1>
-					<p class="website-text">
+		</header>
+		<main class="main content">
+			<div class="container">
+				<div class="main-text">
+					<h1>This Website is Awesome</h1>
+					<p>
 						This website has some subtext that goes here under the main title.
 						It's smaller font and the color is lower contrast.
 					</p>
-					<button class="website-button">Sign Up</button>
+					<a href="#" class="button fill">Sign Up</a>
+				</div>
+				<div class="main-image_area">
+					<img class="main-image" src="https://picsum.photos/800/450" />
 				</div>
 			</div>
-			<div class="img">This is a placeholder for an image</div>
-		</div>
-		<main class="random-info content">
-			<div class="info">
-				<div class="random">Some Random Information</div>
-				<div class="subtext">
-					<img src="blank" alt="subtext-one" />
+		</main>
+		<section class="random_info content">
+			<div class="container">
+				<h2 class="random_header">Some Random Information</h2>
+				<ul class="random_list">
+					<li class="random_block">
+						<img class="randomimage" src="https://picsum.photos/100/100" />
+						<p>this is some subtext under an illustration or image</p>
+					</li>
+					<li class="random_block">
+						<img class="randomimage" src="https://picsum.photos/100/100" />
+						<p>this is some subtext under an illustration or image</p>
+					</li>
+					<li class="random_block">
+						<img class="randomimage" src="https://picsum.photos/100/100" />
+						<p>this is some subtext under an illustration or image</p>
+					</li>
+					<li class="random_block">
+						<img class="randomimage" src="https://picsum.photos/100/100" />
+						<p>this is some subtext under an illustration or image</p>
+					</li>
+				</ul>
+				<!-- <img src="blank" alt="subtext-one" />
 					<p class="one">this is some subtext under an illustration or image</p>
 					<img src="blank" alt="subtext-two" />
 					<p class="two">this is some subtext under an illustration or image</p>
@@ -44,38 +75,45 @@
 					<img src="blank" alt="subtext-four" />
 					<p class="four">
 						this is some subtext under an illustration or image
-					</p>
+					</p> -->
+			</div>
+		</section>
+		<section class="quote_area content">
+			<div class="container">
+				<div class="quote">
+					<figure class="quote_text">
+						<blockquote>
+							<p>
+								This is an inspring quote, or a testimonial from a customer.
+								Maybe it's just filling up space, or maybe people will actually
+								readi it. Who knows? All I know is that it looks nice.
+							</p>
+						</blockquote>
+						<figcaption>-Thor, God of Thunder</figcaption>
+					</figure>
 				</div>
 			</div>
-		</main>
-		<div class="quote-area content">
-			<div class="quote">
-				<figure class="quote-text">
-					<blockquote>
+		</section>
+		<section class="action content">
+			<div class="container">
+				<div class="body">
+					<div class="body-content">
+						<h4>Call To Action! It's Time!</h4>
 						<p>
-							This is an inspring quote, or a testimonial from a customer. Maybe
-							it's just filling up space, or maybe people will actually readi
-							it. Who knows? All I know is that it looks nice.
+							Sign up for our product by clicking that button right over there!
 						</p>
-					</blockquote>
-					<figcaption>-Thor, God of Thunder</figcaption>
-				</figure>
-			</div>
-		</div>
-		<div class="action content">
-			<div class="body">
-				<div class="details">
-					<h3>Call To Action! It's Time!</h3>
-					<p>
-						Sign up for our product by clicking that button right over there!
-					</p>
-					<button class="action-button">Sign Up</button>
+					</div>
+					<div class="action-button">
+						<a href="#" class="button outline">Sign Up</a>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<footer class="footer content">
-			<div class="copyright-info">
-				<div class="copyright">Copyright © The Odin Project</div>
+			<div class="container">
+				<div class="copyright_info">
+					<div class="copyright">Copyright © The Odin Project 2023</div>
+				</div>
 			</div>
 		</footer>
 	</body>

@@ -1,0 +1,21 @@
+.button {
+    /* reset button styles */
+    background: transparent;
+    border: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1.5rem;
+    display: inline-block;
+  }
+  
+  .button.fill {
+    background: #3882f6;
+    color: white;
+  }
+  .button.outline {
+    background: inherit;
+    color: white;
+    border: 1px solid white;
+  }
