@@ -7,13 +7,14 @@
     <title>Landing Page Project</title>
     <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/buttons.css" />
   </head>
   <body>
     <header class="header_area">
       <div class="container">
         <nav class="nav">
-          <h1 class="logo temp_block">Header Logo</h1>
-          <menu class="main_nav temp_block">
+          <h1 class="logo">Header Logo</h1>
+          <menu class="header_nav">
             <li>
               <a href="">Learn About Zeus</a>
             </li>
@@ -25,28 +26,27 @@
             </li>
           </menu>
         </nav>
-
-        <main class="header_body">
-          <div class="header_body-main temp_block">
-            <h1>This Website is awesome</h1>
-            <p>
-              This Website has some subtext that goes here under the main title.
-              It's smaller font and the color is lower contrast
-            </p>
-            <button>Sign Up</button>
-          </div>
-          <div class="header_body-image_area">
-            <img
-              class="header_body-image"
-              src="https://picsum.photos/800/600"
-            />
-          </div>
-        </main>
       </div>
     </header>
 
-    <section class="random_info_block">
+    <main class="main">
       <div class="container">
+        <div class="main-text">
+          <h1>This Website is awesome</h1>
+          <p>
+            This Website has some subtext that goes here under the main title.
+            It's smaller font and the color is lower contrast
+          </p>
+          <button type="button" class="button fill">Sign Up</button>
+        </div>
+        <div class="main-image_area">
+          <img class="main-image" src="https://picsum.photos/800/450" />
+        </div>
+      </div>
+    </main>
+
+    <section class="random_info_block">
+      <div class="container temp_container">
         <h1 class="temp_block">Some Random Info</h1>
         <ul class="random_list temp_block">
           <li class="random_block"></li>
@@ -58,7 +58,7 @@
     </section>
 
     <section class="quote_area">
-      <div class="container">
+      <div class="container temp_container">
         <figure class="quote temp_block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           voluptatem inventore exercitationem, cupiditate expedita aut ipsum
@@ -75,12 +75,13 @@
     </section>
 
     <section class="action_area">
-      <div class="container">
+      <div class="container temp_container">
         <div class="action_block">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, vel
           vero maxime unde fuga culpa rem aliquam. Qui perferendis beatae
           adipisci totam placeat itaque amet pariatur nemo illum reprehenderit.
           Ducimus.
+          <button type="button" class="button outline">Sign Up</button>
         </div>
       </div>
       <!-- <h3 class="title">Call to action! It's time!</h3>
@@ -89,7 +90,7 @@
     </section>
 
     <footer class="footer_area temp_block">
-      <div class="container">footer content goes here</div>
+      <div class="container temp_container">footer content goes here</div>
     </footer>
   </body>
 </html>
