@@ -1,36 +1,100 @@
 html,
 body {
   background: white;
+  font-size: 16px;
 }
 
 body {
 }
 
 .container {
-  height: 200px;
-
   max-width: 980px;
   margin: 0 auto;
   background: rgba(255, 0, 0, 0.5);
+  border: 1px solid red;
 }
+
+.temp_block {
+  background: rgba(0, 0, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
 .header_area {
   background: slateblue;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+}
+
+.main_nav {
 }
 .header_body {
+  display: flex;
+  padding: 50px 0;
+}
+
+.header_body-main {
+  flex-grow: 1;
+}
+.header_body-image_area {
+  flex-grow: 1;
+}
+.header_body-image {
+  display: block;
+  width: 100%;
 }
 
 .random_info_block {
   background: white;
 }
+.random_info_block .container {
+  padding: 50px 0;
+}
+.random_info_block h1 {
+  text-align: center;
+}
+.random_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.random_block {
+  width: 100px;
+  height: 200px;
+  background: green;
+}
+
 .quote_area {
   background: lightgray;
 }
+.quote_area .container {
+  padding: 100px 0;
+}
+.quote {
+  min-height: 200px;
+}
+
 .action_area {
   background: white;
 }
+.action_area .container {
+  padding: 50px 0;
+}
+.action_block {
+  background: royalblue;
+
+  padding: 25px 100px;
+}
+
 .footer_area {
   background: slateblue;
+}
+.footer_area .container {
+  padding: 20px 0;
 }
