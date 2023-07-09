@@ -1,9 +1,10 @@
 html,
 body {
-  background: white;
+  background: var(--light-color);
   font-size: 16px;
   line-height: 1.2;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-color);
   min-height: 100vh;
 }
 
@@ -16,12 +17,10 @@ body {
   max-width: 980px;
   margin: 0 auto;
 }
-.temp_container {
-  background: rgba(255, 0, 0, 0.5);
-  border: 1px solid red;
-}
+
+/* Keep aspect ratio. See: https://css-tricks.com/aspect-ratio-boxes/ */
 .aspect-16x9 {
-  padding-top: calc(450 / 800 * 100%);
+  padding-top: calc(450 / 800 * 100%); /* 56.25% */
   height: 0;
   position: relative;
 }
@@ -57,19 +56,13 @@ h4 {
   font-size: 18px;
 }
 
-.temp_block {
-  background: rgba(0, 0, 255, 0.5);
-  margin-bottom: 1rem;
-}
-
 /* Specific Sections Start Here */
 .header_area {
-  background: #1f2937;
-  color: white;
+  background: var(--dark-background-color);
+  color: var(--dark-background-text-color);
 
   position: sticky;
   top: 0;
-  background: #1f2937;
 }
 
 .nav {
@@ -90,18 +83,18 @@ h4 {
 .header_nav li {
 }
 .header_nav a {
-  color: #ccc;
+  color: var(--tertiary-color);
   text-decoration: none;
 }
 .header_nav a:hover {
-  color: white;
+  color: var(--light-color);
   text-decoration: underline;
 }
 
 /* Main section */
 .main {
-  background: #1f2937;
-  color: white;
+  background: var(--dark-background-color);
+  color: var(--dark-background-text-color);
 
   padding: 50px 0;
 }
@@ -130,7 +123,7 @@ h4 {
 
 /* Random Block */
 .random_info_block {
-  background: white;
+  /* background: white; */
 }
 .random_info_block .container {
   padding: 50px 0;
@@ -154,19 +147,21 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
 
-  border: 2px solid royalblue;
-  border-radius: 0.5rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
 
   margin-bottom: 0.5rem;
 }
+
 .random_block-description {
   font-size: 0.75rem;
   color: #aaa;
   text-align: center;
 }
 
+/* Quote Area */
 .quote_area {
-  background: #e5e7eb;
+  background: var(--tertiary-color);
 }
 .quote_area .container {
 }
@@ -177,7 +172,6 @@ h4 {
   font-size: 36px;
   font-style: italic;
   font-weight: light;
-  color: #1f2937;
 }
 .quote-author {
   text-align: right;
@@ -187,18 +181,21 @@ h4 {
 .quote-author::before {
   content: "-";
 }
+
+/* Action Action */
 .action_area {
-  background: white;
+  /* background: white; */
 }
+
 .action_area .container {
   padding: 50px 0;
 }
 .action_block {
-  background: royalblue;
-  color: white;
+  background: var(--secondary-color);
+  color: var(--light-color);
 
   padding: 50px 100px;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
 
   display: flex;
   align-items: flex-start;
@@ -207,9 +204,10 @@ h4 {
   flex: 1;
 }
 
+/* Footer */
 .footer_area {
-  background: #1f2937;
-  color: white;
+  background: var(--dark-background-color);
+  color: var(--dark-background-text-color);
   margin-top: auto;
 }
 .footer_area .container {
