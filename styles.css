@@ -4,9 +4,12 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -16,6 +19,17 @@ body {
 .temp_container {
   background: rgba(255, 0, 0, 0.5);
   border: 1px solid red;
+}
+.aspect-16x9 {
+  padding-top: calc(450 / 800 * 100%);
+  height: 0;
+  position: relative;
+}
+.aspect-16x9 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* Global H Styles */
@@ -98,7 +112,7 @@ h4 {
 }
 
 .main-text {
-  flex-grow: 1;
+  flex: 1;
   padding-right: 3rem;
 
   display: flex;
@@ -107,7 +121,7 @@ h4 {
   align-items: flex-start;
 }
 .main-image_area {
-  flex-grow: 1;
+  flex: 1;
 }
 .main-image {
   display: block;
@@ -121,8 +135,9 @@ h4 {
 .random_info_block .container {
   padding: 50px 0;
 }
-.random_info_block h1 {
+.random_info_block h3 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 .random_list {
   list-style-type: none;
@@ -131,21 +146,47 @@ h4 {
   gap: 2rem;
 }
 .random_block {
-  width: 100px;
-  height: 200px;
-  background: green;
+  width: min-content;
+}
+.random_block-image {
+  width: 175px;
+  height: 175px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border: 2px solid royalblue;
+  border-radius: 0.5rem;
+
+  margin-bottom: 0.5rem;
+}
+.random_block-description {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-align: center;
 }
 
 .quote_area {
-  background: lightgray;
+  background: #e5e7eb;
 }
 .quote_area .container {
-  padding: 100px 0;
 }
 .quote {
-  min-height: 200px;
+  padding: 5rem;
 }
-
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: light;
+  color: #1f2937;
+}
+.quote-author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24px;
+}
+.quote-author::before {
+  content: "-";
+}
 .action_area {
   background: white;
 }
@@ -154,13 +195,27 @@ h4 {
 }
 .action_block {
   background: royalblue;
+  color: white;
 
-  padding: 25px 100px;
+  padding: 50px 100px;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: flex-start;
+}
+.action_block-text {
+  flex: 1;
 }
 
 .footer_area {
   background: #1f2937;
+  color: white;
+  margin-top: auto;
 }
 .footer_area .container {
   padding: 20px 0;
+}
+
+.copyright {
+  text-align: center;
 }

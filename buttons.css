@@ -4,9 +4,10 @@
   border: 0;
   padding: 0;
   outline: none;
+  text-decoration: none;
 
   border-radius: 0.5rem;
-  padding: 0.25rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .button.fill {

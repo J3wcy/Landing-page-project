@@ -40,57 +40,88 @@
           <button type="button" class="button fill">Sign Up</button>
         </div>
         <div class="main-image_area">
-          <img class="main-image" src="https://picsum.photos/800/450" />
+          <div class="aspect-16x9">
+            <img class="main-image" src="https://picsum.photos/800/450" />
+          </div>
         </div>
       </div>
     </main>
 
     <section class="random_info_block">
-      <div class="container temp_container">
-        <h1 class="temp_block">Some Random Info</h1>
-        <ul class="random_list temp_block">
-          <li class="random_block"></li>
-          <li class="random_block"></li>
-          <li class="random_block"></li>
-          <li class="random_block"></li>
+      <div class="container">
+        <h3 class="">Some Random Info</h3>
+        <ul class="random_list">
+          <li class="random_block">
+            <div
+              class="random_block-image"
+              style="background-image: url('https://picsum.photos/150/150')"
+            ></div>
+            <p class="random_block-description">
+              this is some subtext under an illustration or image
+            </p>
+          </li>
+          <li class="random_block">
+            <div
+              class="random_block-image"
+              style="background-image: url('https://picsum.photos/150/150')"
+            ></div>
+            <p class="random_block-description">
+              this is some subtext under an illustration or image
+            </p>
+          </li>
+          <li class="random_block">
+            <div
+              class="random_block-image"
+              style="background-image: url('https://picsum.photos/150/150')"
+            ></div>
+            <p class="random_block-description">
+              this is some subtext under an illustration or image
+            </p>
+          </li>
+          <li class="random_block">
+            <div
+              class="random_block-image"
+              style="background-image: url('https://picsum.photos/150/150')"
+            ></div>
+            <p class="random_block-description">
+              this is some subtext under an illustration or image
+            </p>
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="quote_area">
-      <div class="container temp_container">
-        <figure class="quote temp_block">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          voluptatem inventore exercitationem, cupiditate expedita aut ipsum
-          molestias iure rerum accusamus quibusdam quia, ipsa cumque beatae
-          veniam quas nulla voluptate impedit.
+      <div class="container">
+        <figure class="quote">
+          <blockquote class="quote-text">
+            This is an inspring quote, or a testimonial from a customer. Maybe
+            it;s just filling up space, or maybe people will actually readi it.
+            Who knows? All I know is that it looks nice.
+          </blockquote>
+          <figcaption class="quote-author">Thor, God of Thunder</figcaption>
         </figure>
       </div>
-      <!-- <p>
-        This is an inspring quote, or a testimonial from a customer. Maybe it;s
-        just filling up space, or maybe people will actually readi it. Who
-        knows? All I know is that it looks nice.
-      </p>
-      <div class="signature">-Thor, God of Thunder</div> -->
     </section>
 
     <section class="action_area">
-      <div class="container temp_container">
+      <div class="container">
         <div class="action_block">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, vel
-          vero maxime unde fuga culpa rem aliquam. Qui perferendis beatae
-          adipisci totam placeat itaque amet pariatur nemo illum reprehenderit.
-          Ducimus.
-          <button type="button" class="button outline">Sign Up</button>
+          <div class="action_block-text">
+            <h3 class="title">Call to action! It's time!</h3>
+            <p>
+              Sign up for our product by clicking that button right over there!
+            </p>
+          </div>
+          <a href="#" class="button outline">Sign Up</a>
         </div>
       </div>
-      <!-- <h3 class="title">Call to action! It's time!</h3>
-      <p>Sign up for our product by clicking that button right over there!</p>
-      <button class="signup">Sign Up</button> -->
     </section>
 
-    <footer class="footer_area temp_block">
-      <div class="container temp_container">footer content goes here</div>
+    <footer class="footer_area">
+      <div class="container">
+        <p class="copyright">Copyright &copy; The Odin Project 2021</p>
+      </div>
     </footer>
   </body>
 </html>
